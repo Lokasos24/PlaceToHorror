@@ -1,0 +1,20 @@
+# Compilación y Binarios
+build/
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.ilk
+
+# Configuración de Editor
+.vscode/
+.vs/
+*.user
+*.sln
+*.vcxproj
+*.filters
+
+# Sistema
+.DS_Store
+Thumbs.db

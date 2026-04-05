@@ -15,6 +15,12 @@ void Engine::init(){
 void Engine::run(){
     m_window.pollEvents(m_isRunning);
 
+    Input::getInstance().update();
+
+    if(Input::getInstance().isKeyDown(SDL_SCANCODE_ESCAPE)){
+        m_isRunning = false;
+    }
+
     m_window.prepare();
 
     m_window.present();

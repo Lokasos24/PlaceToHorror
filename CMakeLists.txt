@@ -12,6 +12,7 @@ set(SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/src/Main.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Engine.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Window.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Input.cpp"
 )
 
 include_directories(

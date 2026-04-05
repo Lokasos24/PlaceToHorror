@@ -30,6 +30,16 @@ void Window::pollEvents(bool& isRunning){
         if(event.type == SDL_QUIT){
             isRunning = false;
         }
+
+        if(event.type == SDL_KEYDOWN){
+            switch(event.key.keysym.sym){
+                case SDLK_ESCAPE: 
+                    isRunning = false;
+                    break;
+                case SDLK_w:
+                    cout<<"Caminando hacia el terror";
+            }
+        }
     }
 }
 

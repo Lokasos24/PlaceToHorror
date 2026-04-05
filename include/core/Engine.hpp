@@ -1,5 +1,6 @@
 #pragma once
 #include "Window.hpp"
+#include "Input.hpp"
 #include <iostream>
 
 class Engine {

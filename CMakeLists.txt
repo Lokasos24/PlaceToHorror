@@ -17,6 +17,8 @@ set(SOURCES
 
 include_directories(
     "${CMAKE_CURRENT_SOURCE_DIR}/include/core"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/components"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/entities"
     ${SDL2_INCLUDE_DIRS}
     "B:/libs/SDL2-devel-2.30.11-VC/SDL2-2.30.11/include"
 )

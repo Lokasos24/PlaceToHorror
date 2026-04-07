@@ -1,4 +1,5 @@
 #include "../../include/core/Input.hpp"
+#include "../../include/entities/Player.hpp"
 
 void Input::update() {
     m_keyboardState = SDL_GetKeyboardState(NULL);

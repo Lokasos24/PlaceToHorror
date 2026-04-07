@@ -4,6 +4,12 @@ Un motor de juego especializado en **Terror Atmosférico** (Silent Hill), desarr
 
 > **Estado del Proyecto:** 🛠️ Fase de Cimientos / Experimental.
 
+## 🧠 Filosofía de Desarrollo
+Este motor es un experimento de **Ingeniería Híbrida**.
+- **Pensamiento Tecnico:** Toda la arquitectura, decisiones de optimización y lógica de terror son mías.
+- **Asistencia de IA:** Utilizo modelos de lenguaje para acelerar la escritura de código tedioso (boilerplates) en C++, permitiéndome enfocarme en lo que realmente importa: la arquitectura y el rendimiento.
+- **Transparencia:** Puedes consultar mis pensamientos y el porqué de cada cambio en [DECISIONS.md](./DECISIONS.md).
+
 ## 🚀 Características
 - **Arquitectura desacoplada:** Sistema de Engine y Window independientes.
 - **Renderizado:** Basado en SDL2 (Hardware Accelerated).

@@ -3,7 +3,14 @@
 
 using namespace std;
 
-Engine::Engine(){}
+Engine::Engine() 
+    : m_isRunning(false),
+      m_player(100.0f, 100.0f),
+      m_lastTime(0),
+      m_deltaTime(0.0f)
+{
+    m_lastTime = SDL_GetPerformanceCounter();
+}
 
 Engine::~Engine(){}
 
@@ -13,16 +20,21 @@ void Engine::init(){
 }
 
 void Engine::run(){
-    m_window.pollEvents(m_isRunning);
+    Uint32 currentTime = SDL_GetPerformanceCounter();
+    m_deltaTime = (float)(currentTime - m_lastTime) / (float)SDL_GetPerformanceFrequency();
+    m_lastTime = currentTime;
 
+    m_window.pollEvents(m_isRunning);
     Input::getInstance().update();
 
     if(Input::getInstance().isKeyDown(SDL_SCANCODE_ESCAPE)){
         m_isRunning = false;
     }
 
-    m_window.prepare();
+    // miJugador.update(m_deltaTime);
 
+    m_window.prepare();
+    // miJugador.render();
     m_window.present();
 }
 

@@ -13,6 +13,7 @@ set(SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Engine.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Window.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Input.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/entities/Player.cpp"
 )
 
 include_directories(

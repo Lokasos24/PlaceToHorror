@@ -21,6 +21,8 @@ class Window{
         void prepare(); //Preparar la ventana con colores
         void present(); //Mostrar la ventana pintada
 
+        SDL_Renderer* getRenderer() const { return m_renderer; };
+
     private:
         SDL_Window* m_window;
         SDL_Renderer* m_renderer;

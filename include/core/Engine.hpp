@@ -1,7 +1,7 @@
 #pragma once
 #include "Window.hpp"
 #include "Input.hpp"
-#include "../entities/Player.hpp"
+#include "../managers/EntityManager.hpp"
 #include <iostream>
 
 class Engine {
@@ -17,8 +17,8 @@ class Engine {
     private:
         bool m_isRunning = false;
         Window m_window;
-
-        Player m_player;
+        
+        EntityManager m_entityManager;
 
         float m_deltaTime = 0.0f;
         Uint64 m_lastTime = 0;

@@ -11,7 +11,7 @@ class Player : public Entity{
         }
 
         void update(float deltaTime) override;
-        void render() override;
+        void render(SDL_Renderer* renderer) override;
 
     private:
         float m_speed = 200.0f;

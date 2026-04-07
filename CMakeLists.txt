@@ -14,12 +14,14 @@ set(SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Window.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Input.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/entities/Player.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/managers/EntityManager.cpp"
 )
 
 include_directories(
     "${CMAKE_CURRENT_SOURCE_DIR}/include/core"
     "${CMAKE_CURRENT_SOURCE_DIR}/include/components"
     "${CMAKE_CURRENT_SOURCE_DIR}/include/entities"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/managers"
     ${SDL2_INCLUDE_DIRS}
     "B:/libs/SDL2-devel-2.30.11-VC/SDL2-2.30.11/include"
 )

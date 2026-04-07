@@ -1,14 +1,10 @@
 #include "../../include/core/Engine.hpp"
+#include <vector>
 #include <iostream>
 
 using namespace std;
 
-Engine::Engine() 
-    : m_isRunning(false),
-      m_player(100.0f, 100.0f),
-      m_lastTime(0),
-      m_deltaTime(0.0f)
-{
+Engine::Engine(){
     m_lastTime = SDL_GetPerformanceCounter();
 }
 
@@ -20,7 +16,7 @@ void Engine::init(){
 }
 
 void Engine::run(){
-    Uint32 currentTime = SDL_GetPerformanceCounter();
+    Uint64 currentTime = SDL_GetPerformanceCounter();
     m_deltaTime = (float)(currentTime - m_lastTime) / (float)SDL_GetPerformanceFrequency();
     m_lastTime = currentTime;
 
@@ -31,10 +27,8 @@ void Engine::run(){
         m_isRunning = false;
     }
 
-    // miJugador.update(m_deltaTime);
-
     m_window.prepare();
-    // miJugador.render();
+    m_entityManager.render(m_window.getRenderer());
     m_window.present();
 }
 

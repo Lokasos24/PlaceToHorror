@@ -27,7 +27,7 @@ Implemente un *Entity Manager* para que gestione las entidades que se necesitara
 
 
 
-## Registro 01: **Estado reactivo del motor** 08/04/26
+## Registro 03: **Estado reactivo del motor** 08/04/26
 
 ### El problema: Para la computadora es dificil re-dibujar todo cada vez consumiendo varios ciclos de la CPU innecesariamente.
 

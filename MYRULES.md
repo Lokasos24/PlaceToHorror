@@ -1,7 +1,7 @@
 ### Diarios:
   - Máx 3 horas desarrollo
   - 1 hora IA/mentoring/aprendizaje conceptual
-  - 15 mins a pensar branches para el dia siguiente
+  - 15 mins a pensar 3 branches para el dia siguiente (si ya los complete)
   - Descanso obligatorio CADA DÍA
   
 ### Semanales:

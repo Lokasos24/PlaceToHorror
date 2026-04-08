@@ -23,13 +23,29 @@ void Engine::run(){
     m_window.pollEvents(m_isRunning);
     Input::getInstance().update();
 
+    if(Input::getInstance().isKeyDown(SDL_SCANCODE_F5)) m_currentState = EngineState::RUNNING;
+    if(Input::getInstance().isKeyDown(SDL_SCANCODE_F6)) m_currentState = EngineState::EDIT;
+    if(Input::getInstance().isKeyDown(SDL_SCANCODE_P)) m_currentState = EngineState::PAUSE;
+
     if(Input::getInstance().isKeyDown(SDL_SCANCODE_ESCAPE)){
         m_isRunning = false;
+    }
+
+    if (m_currentState == EngineState::RUNNING) {
+        m_entityManager.update(m_deltaTime);
+    } 
+    else if (m_currentState == EngineState::EDIT) {
+        // Aquí se va a poner lógica de mover la cámara libremente
+        // sin que el jugador se mueva por gravedad o IA.
     }
 
     m_window.prepare();
     m_entityManager.render(m_window.getRenderer());
     m_window.present();
+
+    if (m_currentState != EngineState::RUNNING) {
+        SDL_Delay(16);
+    }
 }
 
 bool Engine::isRunning(){

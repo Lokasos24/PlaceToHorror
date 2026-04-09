@@ -39,3 +39,15 @@ Estaba redibujando todo cada frame, entonces consumia el 7% de CPU constantement
 
 ### La desicion:
 Implementar un *Engine estate* para poder cambiar facilmente de estados y que por cada estado ocurra algo diferente.
+
+
+## Gestor de Errores:
+
+### Mi pensamiento:
+Para que el programa no colapse por un error de memoria mio decidi incluir esto como un **guardia** para que me avise si hay algun error.
+
+### Lo que usaba:
+Iba a ciegas en gestionar errores sutiles y prefiero gestionar esos errores sutiles antes de que exploten en algo.
+
+### La desicion:
+Implementar un *ErrorManager* para que pase los tests que se implementaran segun ocurra una nueva funcionalidad.

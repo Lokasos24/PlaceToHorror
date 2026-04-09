@@ -1,6 +1,6 @@
 # 📓 Bitacora de desarrollo: Kyong
 
-## Registro 01: **Linkeo de CMake** 03/04/26
+## Registro 01: **Linkeo de CMake** 06/04/26
 
 ### El problema: Para comunicar los archivos se necesita un centralizador de buscador
 

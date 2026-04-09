@@ -1,6 +1,7 @@
 #include <iostream>
 #include <SDL.h>
 #include "../include/core/Engine.hpp"
+#include "../include/managers/ErrorManager.hpp"
 
 using namespace std;
 

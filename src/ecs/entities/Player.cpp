@@ -1,4 +1,4 @@
-#include "../../include/entities/Player.hpp"
+#include "../../include/ecs/entities/Player.hpp"
 using namespace std;
 
 void Player::update(float deltaTime){

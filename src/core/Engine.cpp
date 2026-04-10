@@ -41,6 +41,7 @@ void Engine::run(){
 
     m_window.prepare();
     m_entityManager.render(m_window.getRenderer());
+    m_uimanager.render(m_window.getRenderer());
     m_window.present();
 
     if (m_currentState != EngineState::RUNNING) {

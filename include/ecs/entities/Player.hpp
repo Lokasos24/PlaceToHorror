@@ -1,6 +1,6 @@
 #pragma once
 #include "Entity.hpp"
-#include "../core/Input.hpp"
+#include "../../core/Input.hpp"
 #include <iostream>
 
 class Player : public Entity{

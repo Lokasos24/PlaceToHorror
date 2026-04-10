@@ -13,15 +13,19 @@ set(SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Engine.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Window.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/core/Input.cpp"
-    "${CMAKE_CURRENT_SOURCE_DIR}/src/entities/Player.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ecs/entities/Player.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/managers/EntityManager.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/managers/UIManager.cpp"
 )
 
 include_directories(
     "${CMAKE_CURRENT_SOURCE_DIR}/include/core"
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/components"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/ecs/components"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/ecs/entities"
     "${CMAKE_CURRENT_SOURCE_DIR}/include/entities"
     "${CMAKE_CURRENT_SOURCE_DIR}/include/managers"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/ui"
+    "${CMAKE_CURRENT_SOURCE_DIR}/include/ui/components"
     ${SDL2_INCLUDE_DIRS}
     "B:/libs/SDL2-devel-2.30.11-VC/SDL2-2.30.11/include"
 )

@@ -41,6 +41,7 @@ Estaba redibujando todo cada frame, entonces consumia el 7% de CPU constantement
 Implementar un *Engine estate* para poder cambiar facilmente de estados y que por cada estado ocurra algo diferente.
 
 
+
 ## Registro 04 **Gestor de Errores** 09/04/26:
 
 ### Mi pensamiento:
@@ -51,3 +52,15 @@ Iba a ciegas en gestionar errores sutiles y prefiero gestionar esos errores suti
 
 ### La desicion:
 Implementar un *ErrorManager* para que pase los tests que se implementaran segun ocurra una nueva funcionalidad.
+
+
+## Registro 05 **Interfaz de Usuario** 10/04/26
+
+### Mi pensamiento: 
+Para que el programa sea moderno y modesto, deveria tener *botones*, *acciones* y mas cosas intuitivas para las personas.
+
+### Lo que usaba:
+Para ir prototipando con una falta de *Interfaz* para orientarme, es mucho mas dificil.
+
+### La desicion:
+Implementare una *UI* para hacer que el programa se vea intuitivo y facil de usar para las personas que solo quieran hacer historias.

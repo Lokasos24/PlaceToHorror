@@ -1,5 +1,6 @@
 ### Diarios:
-  - Antes de empezar ver branches activos y decidir
+  - Antes de elegir "ramas" ver las "ramas" activas y decidir
+  - Antes de empezar a programar o utilizar IA, documentar que empezare
   - Máx 3 horas desarrollo
   - 1 hora IA/mentoring/aprendizaje conceptual
   - 15 mins a pensar 3 branches para el dia siguiente (si ya los complete)

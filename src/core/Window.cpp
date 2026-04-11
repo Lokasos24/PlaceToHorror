@@ -24,22 +24,9 @@ bool Window::init(const char* title, int width, int height){
     return true;
 }
 
-void Window::pollEvents(bool& isRunning){
-    SDL_Event event;
-    while(SDL_PollEvent(&event)){
-        if(event.type == SDL_QUIT){
-            isRunning = false;
-        }
-
-        if(event.type == SDL_KEYDOWN){
-            switch(event.key.keysym.sym){
-                case SDLK_ESCAPE: 
-                    isRunning = false;
-                    break;
-                case SDLK_w:
-                    cout<<"Caminando hacia el terror";
-            }
-        }
+void Window::handleEvents(SDL_Event& event, bool& isRunning){
+    if(event.type == SDL_QUIT){
+        isRunning = false;
     }
 }
 

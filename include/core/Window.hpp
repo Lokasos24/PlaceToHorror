@@ -16,7 +16,7 @@ class Window{
         void clean();
 
         //Evento de pantallas
-        void pollEvents(bool& isRunning);
+        void handleEvents(SDL_Event& event, bool& isRunning);
 
         void prepare(); //Preparar la ventana con colores
         void present(); //Mostrar la ventana pintada

@@ -13,7 +13,5 @@ int main(int argc, char* argv[]){
         motor.run();
     }
 
-    cout<<"Se termino de ejecutar el motor";
-
     return 0;
 }

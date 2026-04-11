@@ -2,6 +2,7 @@
 #include "Window.hpp"
 #include "Input.hpp"
 #include "../managers/EntityManager.hpp"
+#include "../managers/UIManager.hpp"
 #include <iostream>
 
 enum class EngineState {
@@ -26,6 +27,7 @@ class Engine {
         
         EngineState m_currentState = EngineState::EDIT;
         EntityManager m_entityManager;
+        UIManager m_uimanager;
 
         float m_deltaTime = 0.0f;
         Uint64 m_lastTime = 0;

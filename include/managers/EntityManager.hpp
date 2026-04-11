@@ -1,6 +1,6 @@
 #pragma once
 #include <vector>
-#include "../entities/Entity.hpp"
+#include "../ecs/entities/Entity.hpp"
 #include <SDL.h>
 
 class EntityManager {

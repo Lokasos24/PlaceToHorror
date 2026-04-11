@@ -25,3 +25,10 @@
 * Por que esta rama: Por que esta rama *disparara eventos* para crear una *entidad* nueva sin necesidad de comandos o crearlos a travez de lineas de codigo.
 
 * Caso de exito: Cuando la interfaz sea intuitiva y facil de usar.
+
+---
+
+## 5- Mover objetos
+* Por que esta rama: Por que esta rama movera objetos/entidades del mundo con el *mouse* que esten para posicionarlos.
+
+* Caso de exito: Cuando un objeto se posicione "bien" desde la posicion inicial hasta donde se arrastro el *mouse*.

@@ -5,7 +5,6 @@
   - 1 hora IA/mentoring/aprendizaje conceptual
   - 15 mins a pensar 3 branches para el dia siguiente (si ya los complete)
   - Descanso obligatorio CADA DÍA
-  - Si me dan ganas de refactorizar, hacerlo de 15 a 30 mins en la rama "refactors"
 
 ### Semanales:
   - 1 día SIN código (viernes noche, fin de semana)
@@ -16,3 +15,6 @@
   - "Break week" donde SOLO entiendes conceptos
   - Documentación de lo aprendido
   - Reseteo mental
+
+### Opcionales:
+  - Si quiero refactorizar, hacerlo de 15 a 30 mins en la rama "refactors"

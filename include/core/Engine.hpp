@@ -3,6 +3,7 @@
 #include "Input.hpp"
 #include "../managers/EntityManager.hpp"
 #include "../managers/UIManager.hpp"
+#include "../managers/EventManager.hpp"
 #include <iostream>
 
 enum class EngineState {

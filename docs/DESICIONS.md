@@ -13,7 +13,7 @@ Implementar CMake para automatizar este proceso y no ir añadiendo mas cosas man
 ### Nota
 No se actualiza automaticamente, aun tengo que agregar los archivos asi que la solucion es tecnicamente ABSURDA (tengo que arreglar eso)
 
-
+---
 
 ## Registro 02: **Las entidades del motor** 07/04/26
 
@@ -25,7 +25,7 @@ Para que un juego pueda ser conectado por internet necesita un *gestor de Entida
 ### La desicion: 
 Implemente un *Entity Manager* para que gestione las entidades que se necesitaran si un juego se vuelve mas grande.
 
-
+---
 
 ## Registro 03: **Estado reactivo del motor** 08/04/26
 
@@ -40,7 +40,7 @@ Estaba redibujando todo cada frame, entonces consumia el 7% de CPU constantement
 ### La desicion:
 Implementar un *Engine estate* para poder cambiar facilmente de estados y que por cada estado ocurra algo diferente.
 
-
+---
 
 ## Registro 04 **Gestor de Errores** 09/04/26:
 
@@ -53,6 +53,7 @@ Iba a ciegas en gestionar errores sutiles y prefiero gestionar esos errores suti
 ### La desicion:
 Implementar un *ErrorManager* para que pase los tests que se implementaran segun ocurra una nueva funcionalidad.
 
+---
 
 ## Registro 05 **Interfaz de Usuario** 10/04/26
 
@@ -64,3 +65,16 @@ Para ir prototipando con una falta de *Interfaz* para orientarme, es mucho mas d
 
 ### La desicion:
 Implementare una *UI* para hacer que el programa se vea intuitivo y facil de usar para las personas que solo quieran hacer historias.
+
+---
+
+## Registro 06 **Event Manager** 13/04/26
+
+### Mi pensamiento:
+Para que el programa no este acoplado con las funciones hice un *event manager* para que gestione los eventos de manera dinamica y desacoplada.
+
+### Lo que usaba:
+Para ir definendo las capas necesitaba un *acoplamiento* para poder disparar la entidad y se dibujase.
+
+### La desicion:
+Implementar un *EventManager* para desacoplar la logica de *emitir* con *crear* algo en pantalla.

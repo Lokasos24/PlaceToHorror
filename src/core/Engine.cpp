@@ -13,9 +13,18 @@ Engine::~Engine(){}
 void Engine::init(){
     m_window.init("PlaceToHorror", 800, 600);
 
-    m_uimanager.addElement(new UIButton(10,10,100,30, []() {
-        cout<<"[EVENTO], El boton de la esquina superior izquierda ha sido presionado";
-    }));
+    EventManager::getInstance().subscribe("EXIT_GAME", [this]() {
+        this->m_isRunning = false; 
+    });
+    ButtonConfig quitConfig;
+    quitConfig.x = 10;
+    quitConfig.y = 10;
+    quitConfig.w = 120;
+    quitConfig.h = 40;
+    quitConfig.callback = []() {
+        EventManager::getInstance().emit("EXIT_GAME");
+    };
+    m_uimanager.addElement(new UIButton(quitConfig));
 
     m_isRunning = true;
 }

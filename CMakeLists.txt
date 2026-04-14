@@ -16,7 +16,9 @@ set(SOURCES
     "${CMAKE_CURRENT_SOURCE_DIR}/src/ecs/entities/Player.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/managers/EntityManager.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/managers/UIManager.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/managers/EventManager.cpp"
     "${CMAKE_CURRENT_SOURCE_DIR}/src/ui/components/Button.cpp"
+    "${CMAKE_CURRENT_SOURCE_DIR}/src/ui/UIElement.cpp"
 )
 
 include_directories(

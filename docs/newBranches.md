@@ -39,3 +39,10 @@
 * Por que esta rama: Por que se necesitan crear entidades para poder crear un juego de terror.
 
 * Caso de exito: Cuando una entidad/objeto (rectangulo, cubo, modelo 3D, etc) se logre aparecer en pantalla presionando el boton de esa entidad.
+
+---
+
+## 7- Espacio en pantalla
+* Por que esta rama: Por que se necesita saber cuales son las dimenciones de la pantalla para poder hacer *responsive* la aplicacion.
+
+* Caso de exito: Cuando la aplicacion pueda gestionar las distintas resoluciones y casos bordes de estirado.

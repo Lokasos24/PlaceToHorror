@@ -2,11 +2,6 @@
 
 using namespace std;
 
-UIButton::UIButton(int x, int y, int w, int h, std::function<void()> onClickCallback) 
-: UIElement(x, y, w, h){
-    m_onClick = onClickCallback;
-}
-
 void UIButton::render(SDL_Renderer* renderer){
     int mx, my;
     SDL_GetMouseState(&mx, &my);

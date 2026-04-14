@@ -7,7 +7,9 @@ bool Window::init(const char* title, int width, int height){
         return false;
     }
 
-    m_window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_SHOWN);
+    m_width = width;
+    m_height = height;
+    m_window = SDL_CreateWindow(title, SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, width, height, SDL_WINDOW_SHOWN | SDL_WINDOW_RESIZABLE);
 
     if(!m_window){
         cout<<"No se pudo crear la ventana: "<<SDL_GetError()<<endl;
@@ -37,6 +39,14 @@ void Window::prepare(){
 
 void Window::present(){
     SDL_RenderPresent(m_renderer);
+}
+
+int Window::getHeight(){
+    return m_height;
+}
+
+int Window::getWidth(){
+    return m_width;
 }
 
 void Window::clean(){

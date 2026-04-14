@@ -69,14 +69,6 @@ void Engine::run(){
     }
 }
 
-int Engine::getHeight(){
-    return m_height;
-}
-
-int Engine::getWidth(){
-    return m_width;
-}
-
 bool Engine::isRunning(){
     return m_isRunning;
 }

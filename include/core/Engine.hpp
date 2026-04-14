@@ -20,13 +20,9 @@ class Engine {
         void init();
         void run();
         void toggleState(EngineState newState);
-        int getWidth();
-        int getHeight();
         bool isRunning();
 
     private:
-        int m_width;
-        int m_height;
         bool m_isRunning = false;
         Window m_window;
         

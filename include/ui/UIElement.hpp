@@ -4,7 +4,7 @@
 
 class UIElement {
     public:
-        UIElement(int x, int y, int w, int h) 
+        UIElement(float x, float y, float w, float h) 
             : m_rect({x, y, w, h}), m_isActive(true) {}
 
         virtual ~UIElement() {}
@@ -13,6 +13,6 @@ class UIElement {
         bool isMouseOver(int mouseX, int mouseY);
 
     protected:
-        SDL_Rect m_rect;
+        SDL_FRect m_rect;
         bool m_isActive;
 };

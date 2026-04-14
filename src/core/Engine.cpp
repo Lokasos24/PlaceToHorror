@@ -12,15 +12,17 @@ Engine::~Engine(){}
 
 void Engine::init(){
     m_window.init("PlaceToHorror", 800, 600);
+    int width = m_window.getWidth();
+    int height = m_window.getHeight();
 
     EventManager::getInstance().subscribe("EXIT_GAME", [this]() {
         this->m_isRunning = false; 
     });
     ButtonConfig quitConfig;
-    quitConfig.x = 10;
+    quitConfig.w = width * 0.2f;
+    quitConfig.h = 50;
+    quitConfig.x = width - quitConfig.w - 10;
     quitConfig.y = 10;
-    quitConfig.w = 120;
-    quitConfig.h = 40;
     quitConfig.callback = []() {
         EventManager::getInstance().emit("EXIT_GAME");
     };

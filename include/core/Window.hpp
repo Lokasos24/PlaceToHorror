@@ -17,6 +17,8 @@ class Window{
 
         //Evento de pantallas
         void handleEvents(SDL_Event& event, bool& isRunning);
+        int getWidth();
+        int getHeight();
 
         void prepare(); //Preparar la ventana con colores
         void present(); //Mostrar la ventana pintada
@@ -24,6 +26,8 @@ class Window{
         SDL_Renderer* getRenderer() const { return m_renderer; };
 
     private:
+        int m_width;
+        int m_height;
         SDL_Window* m_window;
         SDL_Renderer* m_renderer;
 };

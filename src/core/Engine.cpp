@@ -12,15 +12,18 @@ Engine::~Engine(){}
 
 void Engine::init(){
     m_window.init("PlaceToHorror", 800, 600);
+    int width = m_window.getWidth();
+    int height = m_window.getHeight();
 
     EventManager::getInstance().subscribe("EXIT_GAME", [this]() {
         this->m_isRunning = false; 
     });
     ButtonConfig quitConfig;
-    quitConfig.x = 10;
-    quitConfig.y = 10;
-    quitConfig.w = 120;
-    quitConfig.h = 40;
+    quitConfig.w = width * 0.2f;
+    quitConfig.h = 50;
+    quitConfig.offsetx = width - quitConfig.w - 10;
+    quitConfig.offsety = 10;
+    quitConfig.anchor = UIAnchor::TOP_RIGHT;
     quitConfig.callback = []() {
         EventManager::getInstance().emit("EXIT_GAME");
     };
@@ -44,6 +47,15 @@ void Engine::run(){
         if(Input::getInstance().isKeyDown(SDL_SCANCODE_F5)) m_currentState = EngineState::RUNNING;
         if(Input::getInstance().isKeyDown(SDL_SCANCODE_F6)) m_currentState = EngineState::EDIT;
         if(Input::getInstance().isKeyDown(SDL_SCANCODE_P)) m_currentState = EngineState::PAUSE;
+
+        if(event.type == SDL_WINDOWEVENT){
+            if(event.window.event == SDL_WINDOWEVENT_RESIZED){
+                int newW = event.window.data1;
+                int newH = event.window.data2;
+
+                m_uimanager.onResize(m_window.getWidth(), m_window.getHeight());
+            }
+        }
 
         if (m_currentState == EngineState::RUNNING) {
             m_entityManager.update(m_deltaTime);

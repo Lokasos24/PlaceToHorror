@@ -21,8 +21,9 @@ void Engine::init(){
     ButtonConfig quitConfig;
     quitConfig.w = width * 0.2f;
     quitConfig.h = 50;
-    quitConfig.x = width - quitConfig.w - 10;
-    quitConfig.y = 10;
+    quitConfig.offsetx = width - quitConfig.w - 10;
+    quitConfig.offsety = 10;
+    quitConfig.anchor = UIAnchor::TOP_RIGHT;
     quitConfig.callback = []() {
         EventManager::getInstance().emit("EXIT_GAME");
     };
@@ -46,6 +47,13 @@ void Engine::run(){
         if(Input::getInstance().isKeyDown(SDL_SCANCODE_F5)) m_currentState = EngineState::RUNNING;
         if(Input::getInstance().isKeyDown(SDL_SCANCODE_F6)) m_currentState = EngineState::EDIT;
         if(Input::getInstance().isKeyDown(SDL_SCANCODE_P)) m_currentState = EngineState::PAUSE;
+
+        if(event.type == SDL_WINDOWEVENT){
+            if(event.window.event == SDL_WINDOWEVENT_RESIZED){
+                int newW = event.window.data1;
+                int newH = event.window.data2;
+            }
+        }
 
         if (m_currentState == EngineState::RUNNING) {
             m_entityManager.update(m_deltaTime);

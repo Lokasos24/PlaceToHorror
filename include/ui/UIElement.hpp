@@ -11,6 +11,7 @@ class UIElement {
         virtual void render(SDL_Renderer* renderer) = 0;
         
         bool isMouseOver(int mouseX, int mouseY);
+        // void calculatePosition(int windowW, int windowH);
 
     protected:
         SDL_FRect m_rect;

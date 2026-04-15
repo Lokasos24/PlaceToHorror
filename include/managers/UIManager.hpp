@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 #include "../ui/UIElement.hpp"
-#include "../ui/components/Button.hpp"
+#include "../ui/components/UIButton.hpp"
 
 class UIManager {
     public:

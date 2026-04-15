@@ -9,8 +9,8 @@ class UIManager {
         
         void render(SDL_Renderer* renderer);
 
-        // Aquí se gestionaran los clics más adelante
         void handleEvents(SDL_Event& e);
+        void onResize(int newW, int newH);
         ~UIManager();
 
     private:

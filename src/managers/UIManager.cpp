@@ -29,6 +29,15 @@ void UIManager::handleEvents(SDL_Event& e){
     }
 }
 
+void UIManager::onResize(int newW, int newH){
+    for(auto* element : m_elements){
+        UIButton* btn = dynamic_cast<UIButton*>(element);
+        if(btn){
+            btn->calculatePosition(newW, newH);
+        }
+    }
+}
+
 UIManager::~UIManager(){
     for(auto* element : m_elements){
         delete element;

@@ -52,6 +52,8 @@ void Engine::run(){
             if(event.window.event == SDL_WINDOWEVENT_RESIZED){
                 int newW = event.window.data1;
                 int newH = event.window.data2;
+
+                m_uimanager.onResize(m_window.getWidth(), m_window.getHeight());
             }
         }
 

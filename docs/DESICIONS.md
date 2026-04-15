@@ -78,3 +78,16 @@ Para ir definendo las capas necesitaba un *acoplamiento* para poder disparar la 
 
 ### La desicion:
 Implementar un *EventManager* para desacoplar la logica de *emitir* con *crear* algo en pantalla.
+
+--- 
+
+## Registro 07 **Espacio de pantalla** 14/04/26
+
+### Mi pensamiento:
+Ya que puedo hacer eventos y tener botones funcionales en pantalla, se necesita hacer un sistema para que sea *responsive* el programa.
+
+### Lo que usaba:
+Tenia botones que agregaba posiciones fijas y no se acomodaban.
+
+### La desicion:
+Implementar una funcion dentro de los botones para que corrigan sus posiciones sin necesidad de hacerlo manualmente.

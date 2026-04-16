@@ -1,5 +1,6 @@
 #include <iostream>
 #include <SDL.h>
+#include <SDL_image.h>
 #include "../include/core/Engine.hpp"
 #include "../include/managers/ErrorManager.hpp"
 

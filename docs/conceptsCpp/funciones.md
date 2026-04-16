@@ -1,6 +1,22 @@
 # Conceptos sobre funciones
 
-## Funciones con especificadores
+## Funciones
+
+### Funcion normal:
+* Proposito: Evitas que C++ haga converciones que indeseadas, necesitas ser claro con el cuerpo de el archivo *.h*.
+
+1. Seguridad: ¿QUÉ FRAGILIDADES ELIMINA?
+    - Encapsulamiento de logica reutilizable.
+    - Codigo mas modular y escalable.
+    - Si el codigo hace mas de una cosa, podria optimizarse o llamarse a otra funcion para optimizar.
+
+2. Costo: ¿QUÉ RIESGOS INTRODUCE?
+    - Mas boilerplate.
+    - Las funciones necesitan pasarle los argumentos que necesitan (no pueden ser null).
+    - Poner demaciada logica podria hacer mas costoso el calculo.
+
+3. Síntesis: ¿VALE LA PENA?
+    - Cuando necesites encapsular logica que se reutilizara.
 
 ### Funcion con **const**: 
 * Proposito: Es para decirle a la funcion que los datos son solo de lectura, es decir, las variables que se pasan no pueden modificarse.
@@ -67,6 +83,22 @@
 ---
 
 ### Funcion con **explicit**: 
+* Proposito: Evitas que C++ haga converciones que indeseadas, necesitas ser claro con el cuerpo de el archivo *.h*.
+
+1. Seguridad: ¿QUÉ FRAGILIDADES ELIMINA?
+    - Evita que se haga la convercion de tipos automaticamente.
+    - Al crear una *clase* necesitas definir el *id*.
+    - Seguridad en el sistema de *estructura* de una creacion de objetos.
+
+2. Costo: ¿QUÉ RIESGOS INTRODUCE?
+    - Mas boilerplate.
+
+3. Síntesis: ¿VALE LA PENA?
+    - Cuando necesites ser preciso con la informacion.
+
+---
+
+### Funcion con **overrride**:
 * Proposito: Evitas que C++ haga converciones que indeseadas, necesitas ser claro con el cuerpo de el archivo *.h*.
 
 1. Seguridad: ¿QUÉ FRAGILIDADES ELIMINA?

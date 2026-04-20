@@ -4,6 +4,7 @@
 
 ### Funcionalidad 1: Hacer aparecer una *ventana de windows*
 - Que ocupe: Actualmente ocupo la libreria SDL para hacer aparecer una ventana de *Windows*.
+
 - Fue la funcionalidad exitosa: Si, aparece la ventana comunicandose muy bien con el procesador.
 
 ### Funcionalidad 2: Las entidades dentro de *entity manager*
@@ -22,6 +23,20 @@
 - Fue la funcionalidad exitosa: Si, al aparecer un *puntero nulo* el programa se cierra con un mensaje de *error* ademas te dice en que *linea* y *carpeta* fue donde ocurrio.
 
 ### Funcionalidad 5: La *Interfaz de Usuario*
-- Que ocupe: Actualmente se esta haciendo un estilo basico para gestionar los botones al estilo *1990* para prototipar.
+- Que ocupe: Se estaba haciendo un estilo basico para gestionar los botones al estilo *1990* para prototipar.
 
 - Fue la funcionalidad exitosa: Si ✅, Al hacer click en un boton se activa y *emite un evento* para aparecer un *mensaje en cosola*.
+
+---
+
+## Semana 2 || 13-04-2026 a 19-04-2026
+
+### Funcionalidad 6: El *Espacio en Pantalla*
+- Que ocupe: Ocupo el ancho y alto de la pantalla en la resolucion *640X480* y se va haciendo responsive lo que se inicializa ahi.
+
+- Fue la funcionalidad exitosa: Si ✅, los elementos en pantalla se acomodan al ancho y alto de la pantalla para poder quedarse ahi, actualmente hay un bug que se define en una posicion y cuando se agranda la pantalla se posiciona bien.
+
+### Funcionalidad 7: La *Interfaz de Usuario*
+- Que ocupe: Actualmente ando desarrollando una interfaz de usuario con componentes para reutilizar, esta en fase de desarrollo actualmente, estoy avanzando en la implementacion de que se pueda traer una *imagen* para poder ser una barra y que contega botones.
+
+- Fue la funcionalidad exitosa: En desarrollo, actualmente necesito ver si se renderiza la imagen para confimar la funcionalidad (no parara hasta poder hacer una UI intuitiva).
